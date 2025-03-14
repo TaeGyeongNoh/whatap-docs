@@ -2,7 +2,7 @@
 slug: 2024-4q-summary
 title: 4분기 안내
 authors: ysj
-date: 2025-01-11T09:30
+date: 2025-03-16T09:30
 toc_max_heading_level: 2
 tags: [새로운 기능, 2024]
 ---
@@ -20,23 +20,12 @@ tags: [새로운 기능, 2024]
 |**공통**|
 |---| 
 
-{/* > * <Cmdname sid="side_eventSettingV2" className="uitext" /> 메뉴 및 <Cmdname sid="side_integratedRealtimeAlert" className="uitext" /> 등 경고 알림 기능이 개선되었습니다.  */}
-> * <Cmdname sid="side_eventSettingV2" className="uitext" /> 메뉴가 개선되었습니다.
-> * `Application`, `Kubernetes`, `Database` 상품군에서 <Cmdname sid="side_metricsChart" className="uitext" /> <code class="newfunc">New</code> 메뉴를 새롭게 제공합니다. 
-
-{/* 공통 메뉴 개선 또는 이벤트 v2 메뉴 개선 
-
-> * 편의성 향상을 위해 <Cmdname sid="side_eventSettingV2" className="uitext" /> <code class="newfunc">New</code> 메뉴가 개선되었습니다.
-
-*/}
+> <Cmdname sid="side_eventSettingV2" className="uitext" /> 메뉴 및 <Cmdname sid="side_integratedRealtimeAlert" className="uitext" /> 등 <Cmdname sid="side_event" className="uitext" /> 기능이 개선되었습니다.  
 
 |**Application**|
 |---|
 
-> <Cmdname sid="side_statistics" className="uitext" /> 및 <Cmdname sid="side_agentsConfiguration" className="uitext" /> 등 공통 메뉴가 개선되었습니다.
-
-{/* > * `Node.js` 상품이 로그 모니터링을 제공합니다.
-> * `.NET` 상품이 멀티 트랜잭션을 지원합니다. */}
+> 애플리케이션과 데이터베이스 상품 **연계 모니터링**을 지원합니다.
 
 {/* > * `.NET` Core 라이브러리 지원 범위가 확대되었으며 멀티 트랜잭션을 지원합니다.  */}
 {/* > * 애플리케이션과 데이터베이스 상품 연계 모니터링을 지원합니다. (10월) */}
@@ -44,15 +33,13 @@ tags: [새로운 기능, 2024]
 |**Server**|
 |---|
 
-> * Unix **HP-UX** 설치 패키지를 제공합니다.
-> * <Cmdname sid="side_serverInventory" className="uitext" /> 메뉴를 새롭게 제공합니다. 
+> <Cmdname sid="side_serverInventory" className="uitext" /> 기능을 새롭게 제공합니다. 
 
 |**Kubernetes**|
 |---|
 
-> * <Cmdname sid="side_nodeMap" className="uitext" />, <Cmdname sid="side_nodeTimeline" className="uitext" />, <Cmdname sid="side_nodeDiskList" className="uitext" />과 같은 신규 메뉴가 추가되었으며, 기존 <Cmdname sid="side_nodeList" className="uitext" /> 메뉴가 개선되었습니다. 
-> * <Cmdname sid="TTL08317" className="uitext" type="container" />, <Cmdname sid="TTL08317" className="uitext" type="kube_pod" /> 기능을 새롭게 제공합니다. 
-> * <Cmdname sid="side_kubeServiceList" className="uitext" /> 메뉴를 새롭게 제공합니다. 
+> * <Cmdname sid="side_etcdDashboard" className="uitext" /> 기능을 새롭게 제공합니다. 
+> * <Cmdname sid="side_ingressList" className="uitext" /> 기능을 새롭게 제공합니다. 
 
 {/* 
 
@@ -65,17 +52,17 @@ tags: [새로운 기능, 2024]
 |**Database**|
 |---|
 
-> * `Oracle`, `Altibase`, `Cubrid` 상품 <code class="my">V2</code> 서비스를 제공합니다.
-> * `Oracla Pro` 상품 **정식** 서비스를 제공합니다. 
-> * <Cmdname sid="side_dbScriptManager" className="uitext" /> 메뉴를 새롭게 제공합니다. 
-> * <Cmdname sid="side_multiInstance" className="uitext" /> 메뉴의 기능 개선이 이루어졌습니다. 
+> * 애플리케이션과 데이터베이스 상품 **연계 모니터링**을 지원합니다.
+> * <Cmdname sid="side_dbCloudSetting" className="uitext" /> 기능을 세롭게 제공합니다. 
+> * MS SQL <code class='my'>V2</code> 서비스를 제공합니다. 
 
 {/* > * 애플리케이션과 데이터베이스 상품 연계 모니터링을 지원합니다. (10월, 10월에 또 클라우드 지표 긁어오는 거 가능) */}
 
 |**Browser**|
 |---|
 
-> <Cmdname sid="TTL08103" className="uitext" /> 기능 안정화가 이루어졌습니다. 
+> * <Cmdname sid="side_pageLoadStatistics" className="uitext" /> 기능을 새롭게 제공합니다. 
+> * <Cmdname sid="side_ipLoadStatistics" className="uitext" /> 기능을 새롭게 제공합니다. 
 
 {/* 
 
@@ -83,6 +70,11 @@ tags: [새로운 기능, 2024]
 |---| 
 
 */}
+
+
+import News_24q4 from "../crw-data/crwld-service-24q4/_import-24q4-service-NewFC.mdx";
+
+<News_24q4 />
 
 
 {/* 
@@ -340,9 +332,9 @@ import Go_agent_24q4 from "../crw-data/crwld-agent-24q4/_import-agent-24q4-golan
 <details className='changelog'>
 <summary><b>신규 기능 및 주요 변경 사항 안내</b></summary>
 
-import Server_24q3 from "../crw-data/crwld-service-24q3/_import-24q3-service-Server.mdx";
+import Server_24q4 from "../crw-data/crwld-service-24q4/_import-24q4-service-Server.mdx";
 
-<Server_24q3 />
+<Server_24q4 />
 
 </details>
 
@@ -418,9 +410,9 @@ import Server_agent_24q4 from "../crw-data/crwld-agent-24q4/_import-agent-24q4-s
 <details className='changelog'>
 <summary><b>신규 기능 및 주요 변경 사항 안내</b></summary>
 
-import Kubernetes_24q3 from "../crw-data/crwld-service-24q3/_import-24q3-service-Kubernetes.mdx";
+import Kubernetes_24q4 from "../crw-data/crwld-service-24q4/_import-24q4-service-Kubernetes.mdx";
 
-<Kubernetes_24q3 />
+<Kubernetes_24q4 />
 
 </details>
 
@@ -475,9 +467,9 @@ import Kubernetes_agent_24q4 from "../crw-data/crwld-agent-24q4/_import-agent-24
 <details className='changelog'>
 <summary><b>신규 기능 및 주요 변경 사항 안내</b></summary>
 
-import Database_24q3 from "../crw-data/crwld-service-24q3/_import-24q3-service-Database.mdx";
+import Database_24q4 from "../crw-data/crwld-service-24q4/_import-24q4-service-Database.mdx";
 
-<Database_24q3 />
+<Database_24q4 />
 
 </details>
 
